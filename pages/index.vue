@@ -1,4 +1,5 @@
 <template>
+  <link rel="stylesheet" href="/css/index.css">
   <div class="first">
     <div class="void-main">
       <h1 class="h1-main">
