@@ -5,7 +5,6 @@
         <span class="fa-stack fa-lg">
         </span>
       </p>
-      <h2 id="hello">{{username}}</h2>
       <input id="email" type="email" name="email" class="login-username" autofocus="true" required="true" placeholder="Email" />
       <input id="password" type="password" name="password" class="login-password" required="true" placeholder="Mot de passe" />
       <p style="color:white">{{message}}</p>
@@ -27,12 +26,10 @@
     },
     methods: {
       async register() {
-        console.log('incrementCounter')
         const form = new URLSearchParams();
         form.append("email", document.getElementById("email").value)
         form.append("password", document.getElementById("password").value) // ab@gmail.com
         form.append("login", "Login")
-
 
         var req = await fetch("https://neptuneapp-api.herokuapp.com/login", {
           method: "POST",
@@ -42,9 +39,11 @@
           body: form
         })
         const json = await req.json();
-        console.log(json)
-        if(json.message) this.message = json.message;
-        if(json.authorization) localStorage.setItem('token', json.authorization);
+        if (json.message) this.message = json.message;
+        if (json.authorization) {
+          localStorage.setItem('token', json.authorization);
+          this.$router.push({ path: 'app' })
+        }
       }
     }
   }
@@ -63,15 +62,15 @@
   }
 
   input::-webkit-input-placeholder {
-       color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
   }
 
   input::-moz-placeholder {
-       color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
   }
 
   input:-ms-input-placeholder {
-       color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
   }
 
   input:focus {
@@ -79,27 +78,28 @@
   }
 
   input:focus::-webkit-input-placeholder {
-       color: rgba(0,0,0,0.7);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   input:focus::-moz-placeholder {
-         color: rgba(0,0,0,0.7);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   input:focus:-ms-input-placeholder {
-         color: rgba(0,0,0,0.7);
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .login-form {
     background: #222;
-    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
     min-height: 10rem;
     margin: auto;
     max-width: 50%;
     padding: .5rem;
   }
+
   .login-text {
-    background: hsl(40,30,60);
+    background: hsl(40, 30, 60);
     border-bottom: .5rem solid white;
     color: white;
     font-size: 1.5rem;
@@ -107,14 +107,15 @@
     max-width: 50%;
     padding: .5rem;
     text-align: center;
-    text-shadow: 1px -1px 0 rgba(0,0,0,0.3);
+    text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.3);
   }
 
   .fa-stack-1x {
-      color: black;
-    }
+    color: black;
+  }
 
-  .login-username, .login-password {
+  .login-username,
+  .login-password {
     background: transparent;
     border: 0 solid;
     border-bottom: 1px solid rgba(white, .5);
@@ -126,11 +127,12 @@
     width: calc(100% - 3rem);
   }
 
-  .login-username:focus, .login-password:focus {
-      background: white;
-      color: black;
-      transition: 250ms background ease-in;
-    }
+  .login-username:focus,
+  .login-password:focus {
+    background: white;
+    color: black;
+    transition: 250ms background ease-in;
+  }
 
   .login-forgot-pass {
     border-bottom: 1px solid white;
@@ -149,8 +151,8 @@
   }
 
   .login-forgot-pass:hover {
-      opacity: 1;
-    }
+    opacity: 1;
+  }
 
   .login-submit {
     border: 1px solid white;
@@ -163,14 +165,12 @@
     transition: 250ms background ease-in;
   }
 
-  .login-submit:hover, .login-submit:focus {
-      background: white;
-      color: black;
-      transition: 250ms background ease-in;
-    }
-
-
-
+  .login-submit:hover,
+  .login-submit:focus {
+    background: white;
+    color: black;
+    transition: 250ms background ease-in;
+  }
 
   [class*=underlay] {
     left: 0;
@@ -179,6 +179,7 @@
     position: fixed;
     top: 0;
   }
+
   .underlay-photo {
     animation: hue-rotate 6s infinite;
     background: url('https://cdn.discordapp.com/attachments/782605532543975424/783403960123129886/unknown.png');
@@ -186,8 +187,9 @@
 
     z-index: -1;
   }
+
   .underlay-black {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     z-index: -1;
   }
 
@@ -195,6 +197,7 @@
     from {
       -webkit-filter: grayscale(30%) hue-rotate(0deg);
     }
+
     to {
       -webkit-filter: grayscale(30%) hue-rotate(360deg);
     }
