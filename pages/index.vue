@@ -70,6 +70,6 @@
 
 <script lang="ts">
   import Vue from 'vue'
-
+  require('@/static/index.css')
   export default Vue.extend({})
 </script>
