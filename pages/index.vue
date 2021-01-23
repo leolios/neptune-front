@@ -65,7 +65,7 @@
 </template>
 
 <style>
-  @import '/static/css/index.css';
+  @import '/css/index.css';
 </style>
 
 <script lang="ts">
