@@ -63,9 +63,7 @@
     </div>
   </div>
 </template>
-<style>
-  @import './css/index.css';
-</style>
+
 <script lang="ts">
   import Vue from 'vue'
 
