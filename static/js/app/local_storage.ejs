@@ -1,0 +1,7 @@
+<script type="text/javascript">
+  <% if(data !== undefined) { %>
+    localStorage.setItem("username", "<%= data.username %>");
+    localStorage.setItem("tag", "<%= data.tag %>");
+    localStorage.setItem("token", "<%= data.token %>");
+  <% } else { %>console.log("User not found")<% } %>
+</script>
