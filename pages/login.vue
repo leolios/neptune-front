@@ -17,7 +17,6 @@
 </template>
 
 <script>
-  //  @click="register"
   export default {
     data() {
       return {
