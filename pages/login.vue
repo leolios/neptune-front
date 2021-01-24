@@ -42,6 +42,7 @@
         if (json.message) this.message = json.message;
         if (json.authorization) {
           localStorage.setItem('token', json.authorization);
+          localStorage.setItem('userid', json.userid);
           this.$router.push({ path: 'app' })
         }
       }
