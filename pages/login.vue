@@ -32,11 +32,7 @@
 
         var req = await fetch("https://neptuneapp-api.herokuapp.com/login", {
           method: "POST",
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
-            form
-          },
-
+          headers: form
         })
         const json = await req.json();
         if (json.message) this.message = json.message;
