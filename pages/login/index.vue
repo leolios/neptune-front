@@ -10,7 +10,7 @@
       <p style="color:white">{{message}}</p>
       <input @click="register" type="submit" name="login" value="Login" class="login-submit" />
     </div>
-    <a href="#" class="login-forgot-pass">Mot de passe oublié ?</a>
+    <NuxtLink to="/register" class="login-forgot-pass">S'inscrire à la place</NuxtLink>
     <div class="underlay-photo"></div>
     <div class="underlay-black"></div>
   </div>
@@ -27,10 +27,10 @@
       async register() {
         const form = new URLSearchParams();
         form.append("email", document.getElementById("email").value)
-        form.append("password", document.getElementById("password").value) // ab@gmail.com
+        form.append("password", document.getElementById("password").value)
         form.append("login", "Login")
 
-        var req = await fetch("https://neptuneapp-api.herokuapp.com/login", {
+        const req = await fetch("https://neptuneapp-api.herokuapp.com/login", {
           method: "POST",
           headers: form
         })
