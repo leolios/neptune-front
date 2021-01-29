@@ -1,17 +1,48 @@
-.container {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
+.app {
+  background: #2f3136;
 }
 
-.container > .sidebar-item {
-  flex: 1;
+.sidebar {
   height: 100vh;
-  background-color: red;
+  width: 11vh;
+  background: #202225;
+  padding-top: 2vh;
 }
 
-.container > .main-item {
-	flex: 14;
-  height: 100vh;
-  background-color: blue;
+.sidebar>.item {
+  height: 9vh;
+  width: 9vh;
+  background: #36393f;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 2vh;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.sidebar>.item:nth-of-type(1) {
+  top: 10vh;
+}
+
+.item > img {
+  height: 100%;
+  width: 100%;
+}
+
+
+.item:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #202225;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 4.5vh;
 }
