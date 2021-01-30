@@ -5,7 +5,7 @@
         <span class="tooltiptext">{{user.username}}</span>
       </div>
       <div class="separator"></div>
-      <div v-for="guild of guilds" class="item"><img v-bind:src="guild.icon" alt="">
+      <div v-for="guild of user.guilds" class="item"><img v-bind:src="guild.icon" alt="">
         <span class="tooltiptext">{{guild.name}}</span>
       </div>
       <div class="item" v-on:click="open_modal()">

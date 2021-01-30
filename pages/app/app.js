@@ -2,8 +2,7 @@ export default {
   data() {
     return {
       user: {},
-      message: undefined,
-      guilds: []
+      message: undefined
     }
   },
   async fetch() {
@@ -15,12 +14,6 @@ export default {
         headers: headers
       }
     ).then(res => res.json());
-    this.user.guilds.forEach(async (item, i) => {
-      let guild = await fetch('https://neptuneapp-api.herokuapp.com/api/guild/'+item).then(res => res.json());
-      this.guilds.push(guild.guild[0]);
-      console.log(this.guilds)
-    });
-
   },
   methods: {
     open_modal() {
@@ -30,8 +23,6 @@ export default {
     },
     close_modal(e) {
       if(e.target !== e.currentTarget) return;
-      console.log(this)
-      console.log(e);
       var modal = document.getElementById("modal_add_server");
       modal.style.display = "none";
     },
@@ -50,7 +41,7 @@ export default {
       const json = await req.json();
       if (json.message) this.message = json.message;
       let guild = await fetch('https://neptuneapp-api.herokuapp.com/api/guild/'+json.new_server[0].id).then(res => res.json());
-      this.guilds.push(guild.guild[0]);
+      this.user.guilds.push(guild.guild[0]);
       // this.$router.push({ path: 'app' })
     }
   }
