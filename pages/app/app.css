@@ -1,21 +1,45 @@
+@font-face {
+  font-family: Helvetica;
+  src: url("/fonts/Helvetica.ttf");
+}
+
 .app {
-  background: #2f3136;
+  background: #36393f;
+  font-family: Helvetica;
 }
 
 .sidebar {
   height: 100vh;
-  width: 11vh;
+  width: 72px;
   background: #202225;
-  padding-top: 2vh;
+  padding-top: 5px;
+  float: left;
+}
+
+.serverbar {
+  display: inline-block;
+  height: 100vh;
+  width: 189px;
+  background-color: #2f3136;
+}
+
+.serverbar .name {
+  width:100%;
+  height: 48px;
+  box-shadow: 0 1px 0 rgb(4 4 5 / 20%), 0 1.5px 0 rgb(6 6 7 / 5%), 0 2px 0 rgb(4 4 5 / 5%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 
 .sidebar .item {
-  height: 9vh;
-  width: 9vh;
+  height: 48px;
+  width: 48px;
   background: #36393f;
   border-radius: 50%;
   margin: 0 auto;
-  margin-bottom: 2vh;
+  margin-bottom: 8px;
   background-size: cover;
   overflow: hidden;
   text-align: center;
@@ -23,6 +47,10 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.sidebar .item:hover {
+  background: #72767d;
 }
 
 .sidebar>.item:nth-of-type(1) {
@@ -54,29 +82,43 @@
 .separator {
   background-color: #2f3136;
   height: 2px;
-  width: 75%;
+  width: 32px;
   margin: 0 auto;
-  margin-bottom: 2vh;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 .plus {
-  height: 50%;
-  width: 50%;
-  fill: #202225;
+  height: 16px;
+  width: 16px;
+  fill: #72767d;
+}
+
+.item .profile {
+  fill: #72767d;
 }
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black w/ opacity */
 }
 
 /* Modal Content */

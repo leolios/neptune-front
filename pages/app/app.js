@@ -2,7 +2,8 @@ export default {
   data() {
     return {
       user: {},
-      message: undefined
+      message: undefined,
+      actual_server: {}
     }
   },
   async fetch() {
@@ -43,6 +44,10 @@ export default {
       let guild = await fetch('https://neptuneapp-api.herokuapp.com/api/guild/'+json.new_server[0].id).then(res => res.json());
       this.user.guilds.push(guild.guild[0]);
       // this.$router.push({ path: 'app' })
+    },
+    open_server(e) {
+      const server_id = e.path[0].getAttribute("server_id");
+      this.actual_server = this.user.guilds.find(x => x.id === server_id);
     }
   }
 }
