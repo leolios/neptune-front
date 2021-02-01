@@ -2,7 +2,7 @@
   <div class="app">
     <section class="sidebar">
       <div class="item">
-        <svg style="fill:#72767d" x="0" y="0" class="profile" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+        <svg style="fill:#72767d" x="0" y="0" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8.00598C14 10.211 12.206 12.006 10 12.006C7.795 12.006 6 10.211 6 8.00598C6 5.80098 7.794 4.00598 10 4.00598C12.206 4.00598 14 5.80098 14 8.00598ZM2 19.006C2 15.473 5.29 13.006 10 13.006C14.711 13.006 18 15.473 18 19.006V20.006H2V19.006Z">
             </path>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8.00598C14 10.211 12.206 12.006 10 12.006C7.795 12.006 6 10.211 6 8.00598C6 5.80098 7.794 4.00598 10 4.00598C12.206 4.00598 14 5.80098 14 8.00598ZM2 19.006C2 15.473 5.29 13.006 10 13.006C14.711 13.006 18 15.473 18 19.006V20.006H2V19.006Z">
@@ -25,6 +25,16 @@
       <div v-for="guild of user.guilds" class="item" v-on:click="open_server($event)">
         <img v-bind:src="guild.icon" v-bind:server_id="guild.id">
         <span class="tooltiptext">{{guild.name}}</span>
+      </div>
+      <div class="separator"></div>
+      <div class="item">
+        <svg style="fill:#72767d" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M12 2C6.486 2 2 6.487 2 12C2 17.515 6.486 22 12 22C17.514 22 22 17.515 22 12C22 6.487 17.514 2 12 2ZM12 18.25C11.31 18.25 10.75 17.691 10.75 17C10.75 16.31 11.31 15.75 12 15.75C12.69 15.75 13.25 16.31 13.25 17C13.25 17.691 12.69 18.25 12 18.25ZM13 13.875V15H11V12H12C13.104 12 14 11.103 14 10C14 8.896 13.104 8 12 8C10.896 8 10 8.896 10 10H8C8 7.795 9.795 6 12 6C14.205 6 16 7.795 16 10C16 11.861 14.723 13.429 13 13.875Z"></path></svg>
+        <span class="tooltiptext">{{user.username}}</span>
+      </div>
+      <div class="item">
+        <svg style="fill:#72767d" x="0" y="0" aria-hidden="false" width="24" height="24"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.738 10H22V14H19.739C19.498 14.931 19.1 15.798 18.565 16.564L20 18L18 20L16.565 18.564C15.797 19.099 14.932 19.498 14 19.738V22H10V19.738C9.069 19.498 8.203 19.099 7.436 18.564L6 20L4 18L5.436 16.564C4.901 15.799 4.502 14.932 4.262 14H2V10H4.262C4.502 9.068 4.9 8.202 5.436 7.436L4 6L6 4L7.436 5.436C8.202 4.9 9.068 4.502 10 4.262V2H14V4.261C14.932 4.502 15.797 4.9 16.565 5.435L18 3.999L20 5.999L18.564 7.436C19.099 8.202 19.498 9.069 19.738 10ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"></path></svg>
+        <span class="tooltiptext">{{user.username}}</span>
       </div>
     </section>
     <div class="serverbar">
