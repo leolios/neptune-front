@@ -41,6 +41,13 @@
       <div class="name">
         {{actual_server.name}}
       </div>
+      <div class="channels">
+        <li class="channel" v-for="channel of actual_server.channels">
+            <svg class="channel_name" style="transform: rotate(-90deg);" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M16.59 8.59004L12 13.17L7.41 8.59004L6 10L12 16L18 10L16.59 8.59004Z"></path>
+            </svg>
+          <span class="channel_name">{{channel.name}}</span></li>
+      </div>
     </div>
     <div id="modal_add_server" class="modal" v-on:click="close_modal($event)">
       <div class="modal-content">

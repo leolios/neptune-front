@@ -33,6 +33,29 @@
   color: #fff;
 }
 
+.serverbar .channels {
+  padding-top: 25px;
+  height:100%;
+  width:100%;
+  justify-content: center;
+  color: #8e9297;
+}
+
+.channel {
+  display: table;
+
+}
+
+.channel_icon {
+vertical-align: middle;
+display: inline-block;
+}
+
+.channel_name {
+  vertical-align: middle;
+  display: table-cell;
+}
+
 .sidebar .item {
   height: 48px;
   width: 48px;
