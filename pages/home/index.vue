@@ -40,10 +40,10 @@
     </div>
     <div class="footer">
       <hr class="hr-border">
-      <div>
+      <div class="foot-navigation">
         <ul>
           <li class="footer-plan">Pages</li>
-          <li><a class="footer-link" href="/">Home </a></li>
+          <li><a class="footer-link btn-request" href="/">Home </a></li>
           <li><a class="footer-link btn-request" href="/formulaire" target="_blank">Application form</a></li>
           <li><a class="footer-link btn-request" href="/404">Error</a></li>
 
@@ -53,7 +53,7 @@
         </ul>
         <ul>
           <li class="footer-plan">Usefull links</li>
-          <li><a class="footer-link" href="#" target="_blank">Blog</a></li>
+          <li><a class="footer-link btn-request" href="#" target="_blank">Blog</a></li>
           <li><a class="footer-link btn-request" href="#" target="_blank">Idk</a></li>
         </ul>
       </div>
