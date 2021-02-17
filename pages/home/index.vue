@@ -9,10 +9,10 @@
       <div class="full">
         <div>
           <ul>
-            <li class="join">  <NuxtLink to="/register">INSCRIPTION</NuxtLink></li>
+            <li class="join">  <NuxtLink to="/register">Register</NuxtLink></li>
           </ul>
           <ul>
-            <li class="join"><a href="/login">SE CONNECTER</a></li>
+            <li class="join"><a href="/login">Login</a></li>
           </ul>
         </div>
       </div>
@@ -22,7 +22,7 @@
     <div id="appear-1" class="appear-1">
       <div class="full">
         <h1 class="full-h1">
-          Vous aimez les gens et bien nous aussi
+          You love people, we do too.
         </h1>
       </div>
     </div>
@@ -31,34 +31,34 @@
     <div id="appear-2" class="appear-2">
       <div class="full">
         <h1 class="full-h1">
-          Vous avez la tête dans les étoiles, nous dans les planétes
+          You have your head in the stars, we in the planets.
         </h1>
       </div>
     </div>
     <div class="void-before-footer">
-      <a class="join" href="/register">Rejoignez-nous</a>
+      <a class="join" href="/register">Join-us</a>
     </div>
     <div class="footer">
       <hr class="hr-border">
       <div>
         <ul>
-          <li class="footer-plan">Les pages du sites</li>
+          <li class="footer-plan">Pages</li>
           <li><a class="footer-link" href="/">Home </a></li>
-          <li><a class="footer-link btn-request" href="/formulaire" target="_blank">Formulaire de Recrutement</a></li>
-          <li><a class="footer-link btn-request" href="/404">Erreur</a></li>
+          <li><a class="footer-link btn-request" href="/formulaire" target="_blank">Application form</a></li>
+          <li><a class="footer-link btn-request" href="/404">Error</a></li>
 
         </ul>
         <ul>
           <li class="footer-separation-li"></li>
         </ul>
         <ul>
-          <li class="footer-plan">Les sites</li>
-          <li><a class="footer-link" href="https://discord.com" target="_blank">Discord ( le concurrent lol )</a></li>
-          <li><a class="footer-link btn-request" href="https://facebook.com" target="_blank">Pareil que nous mais pour les vieux</a></li>
+          <li class="footer-plan">Usefull links</li>
+          <li><a class="footer-link" href="#" target="_blank">Blog</a></li>
+          <li><a class="footer-link btn-request" href="#" target="_blank">Idk</a></li>
         </ul>
       </div>
       <hr class="hr-border">
-      <Copyright>Neptune 2020 © tous droits réservés</Copyright>
+      <Copyright>Neptune 2021 © all rights reserved.</Copyright>
     </div>
   </div>
 </template>
