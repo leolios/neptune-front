@@ -241,12 +241,6 @@
     text-decoration: none;
     letter-spacing: 2px;
     font-size: 12px;
-
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -ms-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
   }
 
   li a:hover {
