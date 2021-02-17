@@ -7,12 +7,12 @@
     </div>
     <div id="appear-2" class="appear-2">
       <div class="full">
-        <div class="navbar">
+        <div>
           <ul>
             <li class="join">  <NuxtLink to="/register">INSCRIPTION</NuxtLink></li>
           </ul>
           <ul>
-            <li class="li-navbar"><a href="/login">SE CONNECTER</a></li>
+            <li class="join"><a href="/login">SE CONNECTER</a></li>
           </ul>
         </div>
       </div>

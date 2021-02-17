@@ -130,9 +130,9 @@ li{
   border: 1px solid #FFCB39;
   border-radius: 100px;
   font-weight: 400;
-  transition: all 0.3s ease-in;
   outline: none;
   text-decoration: none;
+  background-color: #ffcb39;
 }
 .join:hover{
   background-color: #ffcb39;
@@ -146,15 +146,7 @@ li{
 .footer-plan{
   color: black;
 }
-.navbar{
-  opacity:0;
 
-  -moz-animation: animnav 1.5s linear forwards 1.5s;
-  -webkit-animation: animnav 1.5s linear forwards 1.5s;
-  -o-animation: animnav 1.5s linear forwards 1.5s;
-  -ms-animation: animnav 1.5s linear forwards 1.5s;
-  animation: animnav 1.5s linear forwards 1.5s;
-}
 @-moz-keyframes animnav {
   0% {opacity:0;}
   100% {opacity:1;}
