@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'neptune-front',
+    title: 'Neptune - The encrypted social network',
     htmlAttrs: {
       lang: 'en'
     },
