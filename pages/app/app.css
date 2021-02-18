@@ -196,7 +196,7 @@ input:focus:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.login-form {
+.server-form {
   background: #222;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
   min-height: 10rem;

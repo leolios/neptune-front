@@ -51,7 +51,7 @@
     </div>
     <div id="modal_add_server" class="modal" v-on:click="close_modal($event)">
       <div class="modal-content">
-      <div class="login-form">
+      <div class="server-form">
         <p class="login-text">
           Créer un serveur
           <span class="fa-stack fa-lg">
