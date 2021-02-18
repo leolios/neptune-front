@@ -185,3 +185,7 @@ li{
 .foot-navigation .btn-request {
   margin-bottom: 10px;
 }
+
+.auth-bar {
+  display: flex;
+}
