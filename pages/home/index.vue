@@ -58,7 +58,7 @@
         </ul>
       </div>
       <hr class="hr-border">
-      <Copyright>Neptune 2021 © all rights reserved.</Copyright>
+      <p>Neptune 2021 &copy; all rights reserved.</p>
     </div>
   </div>
 </template>
