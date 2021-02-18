@@ -46,7 +46,7 @@ export default {
       // this.$router.push({ path: 'app' })
     },
     open_server(e) {
-      const server_id = e.path[0].getAttribute("server_id");
+      const server_id = e.target.attributes.server_id.value;
       this.actual_server = this.user.guilds.find(x => x.id === server_id);
     }
   }
