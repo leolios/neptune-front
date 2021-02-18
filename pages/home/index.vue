@@ -8,11 +8,9 @@
     <div id="appear-2" class="appear-2">
       <div class="full">
         <div>
-          <ul>
+          <ul class="auth-bar">
             <li class="join">  <NuxtLink to="/register">Register</NuxtLink></li>
-          </ul>
-          <ul>
-            <li class="join"><a href="/login">Login</a></li>
+            <li class="join"> <NuxtLink to="/login">Login</NuxtLink></li>
           </ul>
         </div>
       </div>
@@ -36,7 +34,7 @@
       </div>
     </div>
     <div class="void-before-footer">
-      <a class="join" href="/register">Join-us</a>
+      <NuxtLink class="join" to="/register">Join-us</NuxtLink>
     </div>
     <div class="footer">
       <hr class="hr-border">
