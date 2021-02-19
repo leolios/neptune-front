@@ -176,10 +176,25 @@ li{
 
 .foot-navigation {
   padding: 5%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "pages usefull-links";
   color: #fff;
+}
+
+.foot-navigation h3 {
+  padding-bottom: 1rem;
+}
+
+.pages {
+  grid-area: pages;
+}
+
+.usefull-links {
+  grid-area: usefull-links;
 }
 
 .foot-navigation .btn-request {

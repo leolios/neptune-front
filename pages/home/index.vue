@@ -39,24 +39,22 @@
     <div class="footer">
       <hr class="hr-border">
       <div class="foot-navigation">
-        <ul>
-          <li class="footer-plan">Pages</li>
-          <li><a class="footer-link btn-request" href="/">Home </a></li>
-          <li><a class="footer-link btn-request" href="/formulaire" target="_blank">Application form</a></li>
-          <li><a class="footer-link btn-request" href="/404">Error</a></li>
-
-        </ul>
-        <ul>
-          <li class="footer-separation-li"></li>
-        </ul>
-        <ul>
-          <li class="footer-plan">Usefull links</li>
-          <li><a class="footer-link btn-request" href="#" target="_blank">Blog</a></li>
-          <li><a class="footer-link btn-request" href="#" target="_blank">Idk</a></li>
-        </ul>
+        <div class="pages">
+          <h3>Pages</h3>
+          <ul>
+            <li><a class="footer-link btn-request" href="/">Home </a></li>
+            <li><a class="footer-link btn-request" href="/formulaire" target="_blank">Application form</a></li>
+            <li><a class="footer-link btn-request" href="/404">Error</a></li>
+          </ul>
+        </div>
+        <div class="usefull-links">
+          <h3>Usefull links</h3>
+          <ul>
+            <li><a class="footer-link btn-request" href="#" target="_blank">Blog</a></li>
+            <li><a class="footer-link btn-request" href="#" target="_blank">Idk</a></li>
+          </ul>
+        </div>
       </div>
-      <hr class="hr-border">
-      <p>Neptune 2021 &copy; all rights reserved.</p>
     </div>
   </div>
 </template>
